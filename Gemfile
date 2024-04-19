@@ -84,3 +84,4 @@ gem 'bootstrap5-kaminari-views'
 gem 'stripe'
 gem "breadcrumbs_on_rails"
 
+
