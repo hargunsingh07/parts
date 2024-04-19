@@ -1,11 +1,12 @@
 class User < ApplicationRecord
-  rolify
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
   has_many :orders
   has_many :user_roles
   has_many :roles, through: :user_roles
+
+  rolify
 
   after_commit :assign_default_role, on: :create
 
