@@ -3,4 +3,3 @@ class About < ApplicationRecord
     ["content", "created_at", "id", "title", "updated_at"]
   end
 end
-
