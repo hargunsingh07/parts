@@ -111,5 +111,3 @@ cat4.products.create!({
                         price: 800.99,
                         quantity: 80
                       })
-
-
