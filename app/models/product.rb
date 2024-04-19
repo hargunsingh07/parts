@@ -4,6 +4,7 @@ class Product < ApplicationRecord
   has_many :order_items
 
   validate :product_category_present
+
   validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
 
   scope :recent_products, -> { where("products.updated_at >= ?", 3.days.ago) }
